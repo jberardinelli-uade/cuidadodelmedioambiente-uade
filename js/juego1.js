@@ -13,9 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createRandomPosition() {
         const x = Math.floor(Math.random() * (gameContainer.clientWidth - 20));
-        const y = Math.floor(Math.random() * (gameContainer.clientHeight / 2) + (gameContainer.clientHeight / 2));
+        // Establece el límite superior para la generación vertical
+        const yUpperLimit = gameContainer.clientHeight / 2 + 60; // Ajusta el valor según sea necesario
+        const y = Math.floor(Math.random() * (gameContainer.clientHeight - yUpperLimit) + yUpperLimit);
         return { x, y };
     }
+    
 
     function initializeGame() {
         const elementTypes = ['botella.png', 'papel.png', 'caja.png', 'pizza.png'];
