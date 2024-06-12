@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
@@ -113,6 +109,7 @@ main {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 25px;
+
 }
 .resized-logo {
     width: 100px; 
@@ -136,8 +133,44 @@ main {
 .main-container p {
     max-width: 800px;
     text-align: center;
+    padding: 20px;
+    padding-top: 0;
 }
 
+/* MENU JUEGOS */
+.juegos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+.juego img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.juego h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
 
 footer {
     position: fixed;
@@ -164,6 +197,7 @@ footer div {
 footer div p {
     color: #fff;
 }
+
 
 @media screen and (max-width: 768px) {
 
