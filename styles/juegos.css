@@ -1,0 +1,103 @@
+/* --------------------------- JUEGOS ---------------------------------------*/
+
+.juegos-section{
+    width: 100%;
+    padding: 2%; 
+    /*86*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.juego-container {
+    width: 45%;
+    margin: 2.5%;
+    padding: 2%;
+    border-color:#8DD5AB;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+.juego-img{
+    margin-right:2% ;
+    flex-shrink: 0;
+}
+.juego-img img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.juego-img img:hover {
+    transform: scale(1.05);
+}
+.juego-info{
+    text-align: center;
+    align-items: center;
+}
+.juego-container h3,.juego-container h4,.juego-container p {
+    margin: 2%;
+    text-align: left;
+}
+
+.juego-button{
+    bottom: 0px;
+    width: 120px;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.juego-button:hover {
+
+    background-color: #8DD5AB;
+}
+
+
+/* --------------------------- MEDIA ---------------------------------------*/
+
+
+@media screen and (max-width: 980px) {
+    .juegos-section{
+        display: inline-block;
+    }
+    .juego-container{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    .juego-container{
+        display: block;
+        align-content: center;
+        text-align: center;
+    }
+
+    
+}
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 20px;
+    
+    }
+}

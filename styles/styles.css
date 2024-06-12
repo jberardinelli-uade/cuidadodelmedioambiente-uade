@@ -38,6 +38,12 @@ p {
 
     color: #161616;
 }
+
+h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
 .background-snippet {
     position: fixed;
     top: 0;
