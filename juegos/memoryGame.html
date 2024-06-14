@@ -9,8 +9,8 @@
     <meta property="og:type" content="website">
 
     <title>Cuidado del Medio Ambiente - Uade</title>
+    <link rel="stylesheet" href="../styles/memoryGame.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/juego2.css">
 </head>
 <body>
     <div class="background-snippet"></div>
@@ -28,20 +28,7 @@
         </nav>
     </header>
     <main>
-        <div class="game-container" id="game-container">
-            <video autoplay loop muted id="background-video">
-                <source src="../assets/img/juego1/video.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-            <div class="game-overlay" id="game-overlay">
-                <h2>Busca la imagen identica y descubri un dato curioso sobre ella</h2>
-                <button id="start-button">Start</button>
-            </div>
-            <div class="game-content" id="game-content">
-            </div>
-            <div id="game"></div>
-        </div>
-        <div id="message" class="hidden"></div>
+        <div id="game-board"></div>
     </main>
     <footer>
         <div>
@@ -49,6 +36,6 @@
             <p>2020</p>
         </div>
     </footer>
-    <script src="../js/juego2.js"></script>
+    <script src="../js/memoryGame.js"></script>
 </body>
 </html>

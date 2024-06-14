@@ -3,22 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Crear el array de cartas con imágenes y audios
     const cardsArray = [
-        {name: 'card1', img: 'img/pulmon_verde.png', audio: 'audio/pulmon_verde.mp3'},
-        {name: 'card1', img: 'img/pulmon_verde.png', audio: 'audio/pulmon_verde.mp3'},
-        {name: 'card2', img: 'img/reunion_por_el_planeta.png', audio: 'audio/card2.mp3'},
-        {name: 'card2', img: 'img/reunion_por_el_planeta.png', audio: 'audio/card2.mp3'},
-        {name: 'card3', img: 'img/tres_erres.png', audio: 'audio/card3.mp3'},
-        {name: 'card3', img: 'img/tres_erres.png', audio: 'audio/card3.mp3'},
-        {name: 'card4', img: 'img/ahorro_de_energia.png', audio: 'audio/card4.mp3'},
-        {name: 'card4', img: 'img/ahorro_de_energia.png', audio: 'audio/card4.mp3'},
-        {name: 'card5', img: 'img/dia_mundial_del_agua.png', audio: 'audio/card5.mp3'},
-        {name: 'card5', img: 'img/dia_mundial_del_agua.png', audio: 'audio/card5.mp3'},
-        {name: 'card6', img: 'img/moda_circular.png', audio: 'audio/card6.mp3'},
-        {name: 'card6', img: 'img/moda_circular.png', audio: 'audio/card6.mp3'},
-        {name: 'card7', img: 'img/residuos_electronicos.png', audio: 'audio/card7.mp3'},
-        {name: 'card7', img: 'img/residuos_electronicos.png', audio: 'audio/card7.mp3'},
-        {name: 'card8', img: 'img/composta.png', audio: 'audio/card8.mp3'},
-        {name: 'card8', img: 'img/composta.png', audio: 'audio/card8.mp3'}
+        {name: 'card1', img: '../assets/img/memoryGame/pulmon_verde.png', audio: 'audio/pulmon_verde.mp3'},
+        {name: 'card1', img: '../assets/img/memoryGame/pulmon_verde.png', audio: 'audio/pulmon_verde.mp3'},
+        {name: 'card2', img: '../assets/img/memoryGame/reunion_por_el_planeta.png', audio: 'audio/card2.mp3'},
+        {name: 'card2', img: '../assets/img/memoryGame/reunion_por_el_planeta.png', audio: 'audio/card2.mp3'},
+        {name: 'card3', img: '../assets/img/memoryGame/tres_erres.png', audio: 'audio/card3.mp3'},
+        {name: 'card3', img: '../assets/img/memoryGame/tres_erres.png', audio: 'audio/card3.mp3'},
+        {name: 'card4', img: '../assets/img/memoryGame/ahorro_de_energia.png', audio: 'audio/card4.mp3'},
+        {name: 'card4', img: '../assets/img/memoryGame/ahorro_de_energia.png', audio: 'audio/card4.mp3'},
+        {name: 'card5', img: '../assets/img/memoryGame/dia_mundial_del_agua.png', audio: 'audio/card5.mp3'},
+        {name: 'card5', img: '../assets/img/memoryGame/dia_mundial_del_agua.png', audio: 'audio/card5.mp3'},
+        {name: 'card6', img: '../assets/img/memoryGame/moda_circular.png', audio: 'audio/card6.mp3'},
+        {name: 'card6', img: '../assets/img/memoryGame/moda_circular.png', audio: 'audio/card6.mp3'},
+        {name: 'card7', img: '../assets/img/memoryGame/residuos_electronicos.png', audio: 'audio/card7.mp3'},
+        {name: 'card7', img: '../assets/img/memoryGame/residuos_electronicos.png', audio: 'audio/card7.mp3'},
+        {name: 'card8', img: '../assets/img/memoryGame/composta.png', audio: 'audio/card8.mp3'},
+        {name: 'card8', img: '../assets/img/memoryGame/composta.png', audio: 'audio/card8.mp3'}
     ];
 
     // Barajar las cartas
