@@ -12,7 +12,7 @@
 span {
     font-weight: 600;
     font-family: "Inter", sans-serif;
-    color: #0F948B;
+    color: #41855D;
 }
 h1 {
     font-family: "Inter", sans-serif;
@@ -23,20 +23,20 @@ h1 {
 h2 {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: #0F948B;
+    color: #41855D;
     font-size: 20px;
 }
 h3 {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: #0F948B;
+    color: #41855D;
     font-size: 25px;
 }
 p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
 
-    color: #161616;
+    color: #161616bc;
 }
 
 h4 {

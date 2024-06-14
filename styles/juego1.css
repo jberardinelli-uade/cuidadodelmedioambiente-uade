@@ -1,5 +1,5 @@
 /* styles/juego1.css */
-/* styles/juego1.css */
+
 .game-overlay {
     position: absolute;
     top: 0;
@@ -36,8 +36,8 @@
 
 .game-container {
     position: relative;
-    width: 1000px; /* Puedes ajustar este tamaño según sea necesario */
-    height: 500px; /* Puedes ajustar este tamaño según sea necesario */
+    width: 1000px; 
+    height: 500px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +71,17 @@
     height: 100%;
     z-index: 1;
 }
+#info {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+#timer {
+    color: red;
+    font-weight: bold;
+}
 
 .item {
     width: 50px;
@@ -95,4 +106,32 @@
 
 .hidden {
     display: none;
+}
+
+#reset-button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#reset-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#reset-button.lose {
+    background-color: #ff6961;
+}
+
+#reset-button.win {
+    background-color: #41855D;
 }
