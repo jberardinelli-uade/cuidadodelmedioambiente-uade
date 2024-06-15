@@ -126,24 +126,6 @@ main {
     width: 45px; 
     margin-right: 15px;
 }
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: 50px;
-}
-.main-container h1 {
-    max-width: 800px;
-    text-align: center;
-}
-.main-container p {
-    max-width: 800px;
-    text-align: center;
-    padding: 20px;
-    padding-top: 0;
-}
 
 /* MENU JUEGOS */
 .juegos-container {
@@ -181,27 +163,15 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F0EBE7;
-    color:white;
-    height: 70px;
-    width: 100%;
-    text-align: center;
-}
-footer div {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #70DC9C, #41855D);
-    padding: 25px;
-    margin-bottom: 20px;
-    border: 2px;
-    border-radius: 25px;
+    color: white;
+    height: 70px;
+    text-align: center;
 }
+
 footer div p {
     color: #fff;
 }

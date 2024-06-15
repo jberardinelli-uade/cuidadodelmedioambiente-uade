@@ -1,0 +1,56 @@
+/* Contenedor principal que presenta la imagen y la descripción */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+  
+  /* Cuadro izquierdo con la imagen */
+.left-box {
+  width: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+  
+.left-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+  
+/* Cuadro derecho con las características */
+.right-box {
+  padding: 20px;
+  border-radius: 10px;
+}
+  
+.right-box ul {
+  padding: 0;
+}
+  
+.right-box li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 10px; /* Tamaño de fuente común para toda la página */
+}
+  
+.right-box h1 strong {
+  font-weight: bold;
+  color: #333;
+}
+  
+.right-box h1 span {
+  font-weight: lighter;
+  color: #666; /* Cambia el color del texto según sea necesario */
+}
+  
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em; /* Tamaño de fuente reducido para los enlaces */
+}
+  
+.link a {
+  text-decoration: none; /* Elimina el subrayado en los enlaces */
+}
+  
