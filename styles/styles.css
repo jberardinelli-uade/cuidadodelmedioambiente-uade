@@ -177,14 +177,101 @@ footer div p {
 }
 
 
-@media screen and (max-width: 768px) {
+/*--------------------------integrantes--------------------------------*/
+
+.integrantes-section{
+    width: 100%;
+    /*86*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+.integrante-container {
+    width: 20%;
+    margin: 2.5%;
+    border-color:#8DD5AB;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 3%;
+}
+
+.integrante-img{
+    flex-shrink: 0;
+    padding-bottom: 5%;
+
+}
+.integrante-img img{
+    border-radius: 10px;
+    width: 120px;
+    height: 212px;
+    object-fit: cover;
+
+}
+
+
+.integrante-img:hover {
+    transform: scale(1.05);
+}
+
+.integrante-url{
+    bottom: 0px;
+    width: 120px;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.integrante-url:hover {
+
+    background-color: #8DD5AB;
+}
+
+
+/*---------------------------------------MEDIA------------------------------*/
+@media screen and (min-width: 1500px) {
+    .integrante-img img{
+        width: 200px;
+        height: 280px;
+    }
+    
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .integrante-container{
+        width: 33%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
 
 }
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 30px;
-    
     }
+    .integrante-section{
+        display: block;
+        align-content: center;
+        text-align: center;
+    }
+    .integrante-container{
+        width: 85%;
+    }
+
+    
 }
 @media screen and (max-width: 376px) {
     h1 {
