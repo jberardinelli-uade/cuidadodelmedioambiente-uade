@@ -1,5 +1,13 @@
 /* --------------------------- JUEGOS ---------------------------------------*/
 
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .juegos-section{
     width: 100%;
     padding: 2%; 
@@ -68,6 +76,39 @@
     background-color: #8DD5AB;
 }
 
+.juegos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+.juego img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.juego h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
 
 /* --------------------------- MEDIA ---------------------------------------*/
 
@@ -84,21 +125,4 @@
     
 
 }
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 30px;
-    }
-    .juego-container{
-        display: block;
-        align-content: center;
-        text-align: center;
-    }
 
-    
-}
-@media screen and (max-width: 376px) {
-    h1 {
-        font-size: 20px;
-    
-    }
-}
