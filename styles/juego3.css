@@ -1,0 +1,27 @@
+
+.game-intro{
+    margin: 2%;
+}
+#game-container {
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 3%;
+    padding-top: 2%;
+    margin-bottom: 70px;
+
+}
+
+canvas {
+    background-image: url(../assets/img/juego3/fondo.png);
+    width: 800px;
+    height: 600px;
+    background-size: cover;
+}
+
+.game-info{
+    text-align: center;
+    margin: 2%;
+}
+.game-info p{
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Oceánica</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/juego3.css">
+
+</head>
+<body>
+    <div class="background-snippet"></div>
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html"><img src="../assets/img/logotipo.png" alt="Logo"></a>
+            </div>
+            <ul class="computer-nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./avances.html">Avances</a></li>
+                <li><a href="./juegos.html">Juegos</a></li>
+            </ul>
+            <nav class="nav-wrapper-container">
+                <input type="checkbox" id="nav" class="hidden" />
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li>
+                            <a class="hover:scale-105 transition" href="#"
+                                >Inicio</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./integrantes.html"
+                                >Integrantes</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./avances.html"
+                                >Avances</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./juegos.html"
+                                >Juegos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-intro">
+            <h1>Aventura en el océano</h1>
+            <p>¡Recoge toda la basura con las flechas en tu teclado y salva animales!</p>
+
+        </div>
+        <div id="game-container">
+            <div class="game-info">
+                <h3 id ="puntos">Puntos: 0 </h3>
+                <p id ="mensaje">¡Comienza el juego!</p>
+            </div>
+            <canvas id="oceano" width="800" height="600"></canvas>
+        </div>
+        <script src="../js/game.js"></script>
+    </main>
+    <footer>
+        <div>
+            <p>UADE - Universidad 🇦🇷 de la Empresa</p>
+            <p>2020</p>
+
+        </div>
+    </footer>
+</body>
+</html>
