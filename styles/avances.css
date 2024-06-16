@@ -81,11 +81,11 @@ h1 {
 
 @media screen and (max-width: 480px) {
     .color-palette {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .color {
-        width: 150px;
-        height: 150px;
+        width: 20px;
+        height: 20px;
     }
     .main-presentation p {
         padding: 5px;
@@ -99,8 +99,5 @@ h1 {
     .ident-visual {
         padding: 10px;
     }
-    .color {
-        width: 20px;
-        height: 20px;
-    }
+
 }
