@@ -18,22 +18,53 @@
     <meta name="twitter:description" content="Este es un sitio web dedicado al cuidado del medio ambiente en la Universidad Argentina de la Empresa (Uade). Aquí encontrarás información, recursos y actividades para promover prácticas sostenibles y la conservación del entorno natural.">
     <meta name="twitter:image" content="assets/img/logo.png">
 
-    <link rel="stylesheet" href="../styles/memoryGame.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navmenu.css">
+    <link rel="stylesheet" href="../styles/memoryGame.css">
+
+
 </head>
 <body>
     <div class="background-snippet"></div>
     <header>
         <nav>
             <div>
-                <img src="../assets/img/logo-white.png" alt="UADE">
+                <img src="../assets/img/logotipo.png" alt="UADE">
             </div>
-            <ul>
+            <ul class="computer-nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/integrantes.html">Integrantes</a></li>
                 <li><a href="../pages/avances.html">Avances</a></li>
                 <li><a href="../pages/juegos.html">Juegos</a></li>
             </ul>
+            <nav class="nav-wrapper-container">
+                <input type="checkbox" id="nav" class="hidden" />
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li>
+                            <a class="hover:scale-105 transition" href="#"
+                                >Inicio</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="../pages/integrantes.html"
+                                >Integrantes</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="../pages/avances.html"
+                                >Avances</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="../pages/juegos.html"
+                                >Juegos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
     </header>
     <main>

@@ -22,6 +22,7 @@
     <meta name="twitter:image:alt" content="Cuidado del Medio Ambiente - Uade">
     
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navmenu.css">
 
 </head>
 <body>
@@ -31,12 +32,40 @@
             <div>
                 <a href="./index.html"><img src="./assets/img/logotipo.png" alt="Logo"></a>
             </div>
-            <ul>
+            <ul class="computer-nav">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/integrantes.html">Integrantes</a></li>
                 <li><a href="./pages/avances.html">Avances</a></li>
                 <li><a href="./pages/juegos.html">Juegos</a></li>
             </ul>
+            <nav class="nav-wrapper-container">
+                <input type="checkbox" id="nav" class="hidden" />
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li>
+                            <a class="hover:scale-105 transition" href="#"
+                                >Inicio</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./pages/integrantes.html"
+                                >Integrantes</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./pages/avances.html"
+                                >Avances</a>
+                        </li>
+                        <li>
+                            <a class="hover:scale-105 transition" href="./pages/juegos.html"
+                                >Juegos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
     </header>
     <main class="last-section">

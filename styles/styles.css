@@ -72,6 +72,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/* NAV PARA PC */
 header {
     display: flex;
     justify-content: center;
@@ -88,9 +89,8 @@ header nav {
     max-width: 1200px;
     padding: 0 20px;
 }
-header nav div img{
+header nav div img {
     width: 45px;
-
 }
 header nav ul {
     display: flex;
@@ -107,6 +107,11 @@ header nav ul li a {
 }
 header nav ul li a:hover {
     color: #F0EBE7;
+}
+@media screen and (max-width: 768px) {
+    .computer-nav {
+        display: none;
+    }
 }
 
 main {
@@ -237,10 +242,6 @@ footer div p {
     margin-bottom: 150px;
 }
 
-
-@media screen and (max-width: 768px) {
-
-}
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 30px;
@@ -254,7 +255,7 @@ footer div p {
     
     }
     .caption-container {
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 376px) {
