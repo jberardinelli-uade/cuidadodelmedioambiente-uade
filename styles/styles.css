@@ -249,6 +249,10 @@ footer div p {
         display: flex;
         flex-direction: column;
     }
+    .main-container p {
+        text-align: center;
+    
+    }
     .caption-container {
         max-width: 80%;
     }
