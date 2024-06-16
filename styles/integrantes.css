@@ -5,11 +5,16 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+.title-int {
+    margin-top:  30px;
+}
 
 .integrantes-section{
     width: 100%;
     /*86*/
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 75px;
 }
@@ -38,7 +43,6 @@ h1 {
 
 }
 
-
 .integrante-img:hover {
     transform: scale(1.05);
 }
@@ -57,6 +61,7 @@ h1 {
     color: black;
     margin-top: 10px;
 }
+
 
 .integrante-url:hover {
 

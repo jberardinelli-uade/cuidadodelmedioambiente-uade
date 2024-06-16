@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
@@ -7,14 +9,47 @@
     text-decoration: none;
     list-style: none;
 }
+span {
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: #41855D;
+}
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #41855D;
+    font-size: 20px;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #41855D;
+    font-size: 25px;
+}
+h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 
+}
 p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+
     color: #161616bc;
-    text-align: center;
 }
 
+h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
 .background-snippet {
     position: fixed;
     top: 0;
@@ -30,7 +65,6 @@ p {
     background-image: radial-gradient(1000% 100% at 0% 50%, #8DD5AB 0, rgba(15, 148, 139,0) 50%, rgba(15, 148, 139,0) 100%);
     opacity: 0.5;
 }
-
 body {
     /* display: flex;
     flex-direction: column;
@@ -38,7 +72,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
     display: flex;
     justify-content: center;
@@ -72,21 +105,157 @@ header nav ul li a {
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
-
 header nav ul li a:hover {
     color: #F0EBE7;
 }
 
-footer {
+main {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #70DC9C, #41855D);
-    color: white;
-    height: 70px;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+.logo-uade-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+}
+.resized-logo {
+    width: 100px; 
+}
+.resized-logo2 {
+    width: 45px; 
+    margin-right: 15px;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr;
+    max-width: 1200px;
+    gap: 20px;
+}
+.title {
+    max-width: 800px;
     text-align: center;
+    margin-bottom: 40px;
+}
+.caption-container {
+    max-width: 650px;
+    
+    padding: 20px;
+    padding-top: 0;
+}
+.presentation-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #F0EBE7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.presentation-card ul {
+    display: flex;
+    justify-content: first baseline;
+    align-items:first baseline;
+    flex-direction: column;
+    gap: 10px;
 }
 
+/* MENU JUEGOS */
+.juegos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+.juego img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.juego h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #70DC9C, #41855D);
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 2px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
 footer div p {
     color: #fff;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+}
+.last-section {
+    margin-bottom: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .caption-container {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 20px;
+    
+    }
 }
