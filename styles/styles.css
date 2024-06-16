@@ -211,8 +211,6 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,8 +225,11 @@ footer div {
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to right, #70DC9C, #41855D);
+    width: 100%;
     padding: 25px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     border: 2px;
     border-radius: 25px;
     flex-wrap: wrap;
