@@ -23,5 +23,17 @@ canvas {
     text-align: center;
     margin: 2%;
 }
-.game-info p{
+#oceano {
+    width: 800px;
+    height: 600px;
+    background-color: #3498db; 
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    #oceano {
+        width: 100%;
+        height: auto;
+    }
 }

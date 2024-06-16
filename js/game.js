@@ -44,7 +44,36 @@ let salmon = [
 let puntos = 0;
 
 //-------------------------- FUNCIONES
+function ajustarCanvas() {
+    if (window.innerWidth <= 600) {
+        canvas.width = 400;
+        canvas.height = 300;
+    } else {
+        canvas.width = 800;
+        canvas.height = 600;
+    }
 
+    // Ajustar posiciones de elementos si es necesario
+    buzo.x = canvas.width / 2;
+    buzo.y = canvas.height / 2;
+
+    basura = [
+        { x: 100 * canvas.width / 800, y: 100 * canvas.height / 600, width: 40, height: 40 },
+        { x: 300 * canvas.width / 800, y: 200 * canvas.height / 600, width: 40, height: 40 },
+        { x: 650 * canvas.width / 800, y: 500 * canvas.height / 600, width: 40, height: 40 },
+    ];
+
+    delfin = [
+        { x: 600 * canvas.width / 800, y: 100 * canvas.height / 600, width: 40, height: 40 },
+    ];
+
+    salmon = [
+        { x: 600 * canvas.width / 800, y: 430 * canvas.height / 600, width: 40, height: 40 },
+    ];
+}
+
+ajustarCanvas();
+window.addEventListener('resize', ajustarCanvas);
 function dibujarDiver() {
     ctx.drawImage(buzoImg, buzo.x, buzo.y, buzo.width, buzo.height);
 }
