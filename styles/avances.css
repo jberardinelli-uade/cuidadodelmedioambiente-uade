@@ -56,6 +56,21 @@ h1 {
     box-shadow: 0px 0px 20px 0px #0000001a;
 }
 
+.button{
+    bottom: 0px;
+    width: 120px;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    text-decoration: none;
+    background-color: #F2F9F4;
+    display: inline-block;
+    color: #41855D;
+    margin-top: 10px;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .color-palette {
